@@ -35,6 +35,8 @@ Gifts:
 
 * [Team Assignments](#team-assignments)
 
+* [Technologies Used](#technologies-used)
+
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -60,6 +62,15 @@ css
 
 Design & misc
 - Devon Leardini
+
+
+## Technologies Used
+
+* Node & Express server
+* Handlebars.js as the template engine
+* MySQL database with a Sequalize ORM
+* Hosted by Heroku
+* New library, package or tech**
 
 ## Installation
 
