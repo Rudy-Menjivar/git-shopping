@@ -3,3 +3,14 @@ form.login {
   margin-top: 50px;
 }
 
+h1.filters{
+  float: left;
+  font-size: 12px;
+}
+header{
+  text-align: center;
+  font-size: 32px;
+}
+div.background.img{
+  background-size: cover;
+}
