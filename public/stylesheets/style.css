@@ -17,6 +17,47 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: black;
+  background-size: cover;
+}
+
+.col-sm {
+  color: antiquewhite;
+  column-gap: 50px;
+  row-gap: 30px;
+  grid-template-rows: center;
+  background-color: black;
+  background-blend-mode: soft-light;
+}
+
+.ExclusiveDeals {
+  letter-spacing: 2px;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  margin: 70px;
+}
+
+.clothing {
+  letter-spacing: 2px;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  margin: 70px;
+}
+
+.homeitems {
+  letter-spacing: 2px;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  margin: 70px;
+}
+
+.row {
+  color: silver;
 }
 
 a { 
