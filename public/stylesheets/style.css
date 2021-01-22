@@ -27,6 +27,7 @@ body {
   grid-template-rows: center;
   background-color: black;
   background-blend-mode: soft-light;
+  padding-top: 15px;
 }
 
 .ExclusiveDeals {
