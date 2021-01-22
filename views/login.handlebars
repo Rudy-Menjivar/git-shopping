@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Git Shopping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto" style="align-items: center">
+        <a class="nav-link" href="clothing">Clothing</a>
+        <a class="nav-link" href="household">Household Items</a>
+        <a class="nav-link active" href="members">Members</a>
+        <a class="nav-link" id="apicart-cart-dropdown"></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-4">
+      <h2>Login</h2>
+        <form method="post" class="login">
+	      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+          {{#if hasError}}
+            <div class="error">{{ error }}</div>
+          {{/if}}
+          <div class="form-group">
+            <label for="username">Email Address</label>
+            <input id="username" type="text" name="username" placeholder="Username" value="{{form.username}}">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password">
+            <button type="submit">Login</button>
+          </div> 
+        </form>
+        <br>
+        <p>Or sign up <a href="register">here</a></p>
+    </div>
+  </div>
+</div>
