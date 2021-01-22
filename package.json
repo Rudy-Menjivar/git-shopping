@@ -16,11 +16,19 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "express": "^4.17.0",
+    "express-handlebars": "^5.2.0",
     "express-session": "^1.16.1",
-    "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.22.3",
+    "mysql2": "^2.0.2",
+    "body-parser": "^1.18.3",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.9.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "helmet": "^3.16.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
