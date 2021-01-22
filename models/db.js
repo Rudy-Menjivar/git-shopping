@@ -1,6 +1,15 @@
 const Sequelize = require('sequelize')
 const bcrypt = require('bcryptjs')
 
+var env = process.env.NODE_ENV || 'development';
+var config = require('../config/config.json')[env];
+
+if (config.use_env_variable) {
+	var sequelize = new Sequelize(process.env[config.use_env_variable]);
+  } else {
+	var sequelize = new Sequelize(config.database, config.username, config.password, config);
+  }
+
 const globalModelConfig = {
 	underscored: true,
 	timestamps: true,
@@ -16,31 +25,31 @@ sequelize.authenticate()
 		console.error('Unable to connect to the database:', err)
 	})
 
-    const SessionModel = sequelize.define('Session', {
-        sid: {
-            type: Sequelize.STRING,
-            primaryKey: true
-        },
-        expires: Sequelize.DATE,
-        data: Sequelize.STRING(10000),
-    }, globalModelConfig)
-    
-    const UserModel = sequelize.define('User', {
-        uid: {
-            type: Sequelize.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        username: Sequelize.STRING(30),
-        email: Sequelize.STRING(255),
-        password_hash: Sequelize.STRING(255),
-    }, globalModelConfig)
-    
-    sequelize.sync({
-        alter: true
-    })
+const SessionModel = sequelize.define('Session', {
+	sid: {
+		type: Sequelize.STRING,
+		primaryKey: true
+	},
+	expires: Sequelize.DATE,
+	data: Sequelize.STRING(16000),
+}, globalModelConfig)
 
-    const getUserById = uid => UserModel.findOne({ where: { uid } })
+const UserModel = sequelize.define('User', {
+	uid: {
+		type: Sequelize.INTEGER,
+		primaryKey: true,
+		autoIncrement: true,
+	},
+	username: Sequelize.STRING(30),
+	email: Sequelize.STRING(255),
+	password_hash: Sequelize.STRING(255),
+}, globalModelConfig)
+
+sequelize.sync({
+	alter: true
+})
+
+const getUserById = uid => UserModel.findOne({ where: { uid } })
 const getUserByUsername = username => UserModel.findOne({ where: { username } })
 const getUserByEmail = email => UserModel.findOne({ where: { email } })
 
