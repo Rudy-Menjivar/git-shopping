@@ -1,6 +1,7 @@
 # git-shopping
 ![{data.license}](https://shields.io/badge/license-MIT-green)
-![{data.passing}](https://travis-ci.com/Rudy-Menjivar/git-shopping.svg?branch=master&status=passed)
+![{data.build}](https://travis-ci.com/Rudy-Menjivar/git-shopping.svg?branch=master&status=passed)
+
 ## Description
     
 Setting up an E-commerce site to buy anything from clothing, household items, electronics and gifts.
