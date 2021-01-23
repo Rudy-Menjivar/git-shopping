@@ -6,11 +6,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto" style="align-items: center">
-        <a class="nav-link active" href="members.html">Members</a>
         <a class="nav-link" href="clothing">Clothing</a>
         <a class="nav-link" href="household">Household Items</a>
+        <a class="nav-link active" href="members">Members</a>
         <a class= "nav-link" href="logout">Log Out</a>
-        <a class="nav-link" id="apicart-cart-dropdown"></a>
       </div>
     </div>
   </div>
@@ -48,7 +47,7 @@
       <img src="/assets/images/yeezy.jpg" alt="" width="200px">
       <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
     </div> 
-  
+  </div>
   <div class = "row2">
     <div class="col2">
       <h2>Sale</h2>
@@ -67,15 +66,9 @@
       <img src="/assets/images/airfryer.jpg" alt="" width="200px">
       <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
     </div>
-
-  </div>
-      <!-- #apicart-cart-dropdown will be replaced by dropdown --->
-      <!-- <div id="apicart-cart-dropdown"></div> -->
-      <!-- #apicart will be replaced by components according to configuration --->
-      <!-- <div id="apicart"></div> -->
-    </div>
   </div>
 </div>
+{{!-- apicart script --}}
 <script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script>
   Apicart
