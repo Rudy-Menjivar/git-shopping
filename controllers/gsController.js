@@ -90,6 +90,14 @@ router.get("/members", authRequired, (req, res) => {
   res.render("members");
 });
 
+router.get("/clothing", (req, res) => {
+  res.render("clothing");
+});
+
+router.get("/shoes", (req, res) => {
+  res.render("shoes");
+});
+
 router.all("/login", (req, res, next) => {
   new Promise((resolve, reject) => {
     if (req.method === "GET") {
