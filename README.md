@@ -1,5 +1,6 @@
 # git-shopping
 ![{data.license}](https://shields.io/badge/license-MIT-green)
+![{data.build}](https://travis-ci.com/Rudy-Menjivar/git-shopping.svg?branch=master&status=passed)
 
 ## Description
     
