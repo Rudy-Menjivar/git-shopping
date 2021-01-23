@@ -1,8 +1,6 @@
 // Requiring necessary npm packages
 const express = require("express");
 const session = require("express-session");
-// Requiring passport as we've configured it
-// const passport = require("./config/passport");  // disabling, see controller
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
@@ -13,13 +11,13 @@ const PORT = process.env.PORT || 8080;
 // Import routes and give the server access to them
 const routes = require("./controllers/gsController.js");
 
-// Set Handlebars
+// Set Handlebars and create express app
 const exphbs = require("express-handlebars");
+const app = express();
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Creating express app and configuring middleware needed for authentication
-const app = express();
+// Configuring middleware needed for authentication & set static folder
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
@@ -36,10 +34,6 @@ app.use(routes);
 
 // App start
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-
-// Requiring our routes // temporarily disabled
-// require("./routes/html-routes.js")(app);  // routes moved to controllers
-// require("./routes/api-routes.js")(app);   // routes moved to controllers
 
 // Syncing our database and logging a message to the user upon success
 // db.sequelize.sync().then(() => {
