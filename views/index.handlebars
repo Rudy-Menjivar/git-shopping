@@ -6,30 +6,31 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto" style="align-items: center">
-        <a class="nav-link active" href="members.html">Members</a>
-        <a class="nav-link" href="clothing.html">Clothing</a>
-        <a class="nav-link" href="">Household Items</a>
-        <a class= "nav-link" href="/login">Log In</a>
-        <a class="nav-link" id="apicart-cart-dropdown"></a>
+        <a class="nav-link" href="clothing">Clothing</a>
+        <a class="nav-link" href="household">Household Items</a>
+        <a class="nav-link" href="members">Members</a>
+        <a class="nav-link" href="/login">Log In</a>
       </div>
     </div>
   </div>
 </nav>
 
+<!-- #apicart-cart-dropdown will be replaced by dropdown --->
+<div id="apicart-cart-dropdown"></div>
+<!-- #apicart will be replaced by components according to configuration --->
+<div id="apicart"></div>
+
 <!-- Populate some items within this container -->
 <div class="container mt-3 p-2">
   <div class="row">
     <div class="col">
-      <h2>Most popularrr</h2>
+      <h2>Most popular</h2>
       <img src="/assets/images/clshirt1613.jpg" alt="" width="200px">
+      <br>
       <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to cart</button>
     </div>
-    <!-- #apicart-cart-dropdown will be replaced by dropdown --->
-    <div id="apicart-cart-dropdown"></div>  
-    <!-- #apicart will be replaced by components according to configuration --->
-    <div id="apicart"></div>
-    </div>
   </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script>
   Apicart
@@ -37,7 +38,7 @@
   .configure({
     store: new Apicart.Store({
       token: "zxbRBAYpNBgJp7CPJMi4VsWjF7eSVoFxqjr4gKb7ZyfQ69ucUH5yswP0Whz5LHFl"
-      // "9mCu3DlBCa4REI?Q7kKly!Rw6!_FvD8K_dgPXe1b20?r6!sPTQMyCpq_ADt!jXOD"
     })
   })
   .initVueBundle();
+</script>
