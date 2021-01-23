@@ -13,15 +13,14 @@ form.login {
 }
 
 body {
-  background-image: url("http://s1.picswalls.com/thumbs2/2016/06/16/earth-background_03321415_311.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: black;
+  background-color: white;
   background-size: cover;
 }
 
 .col-sm {
-  color: antiquewhite;
+  color: red;
   column-gap: 50px;
   row-gap: 30px;
   grid-template-rows: center;
@@ -57,20 +56,20 @@ body {
 }
 
 .row {
-  color: silver;
+  color: red;
 }
 
-a { 
+a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  
+
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -82,8 +81,11 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
+.apicart-cart-dropdown {
+  float: right;
+}
