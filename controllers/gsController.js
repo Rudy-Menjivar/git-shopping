@@ -2,7 +2,6 @@
 /* eslint-disable prettier/prettier */
 const express = require("express");
 const router = express.Router();
-// const app = express()
 
 const session = require("express-session");
 const csurf = require("csurf");
@@ -10,6 +9,8 @@ const helmet = require("helmet");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const db = require("../models/db")(session);
+
+const APIKey=process.env.API_KEY;
 
 router.use(
   session({
@@ -86,8 +87,17 @@ router.get("/", (req, res) => {
   res.render("index");
 });
 
+// router.get("/members", authRequired, (req, res) => {
+//   const APIKey=process.env.API_KEY;
+//   APICart: APIKey,
+//   res.render("members");
+// });
+
+// members require auth & render with APICart
 router.get("/members", authRequired, (req, res) => {
-  res.render("members");
+  res.render("members", {
+    APICart: APIKey,
+  });
 });
 
 router.get("/clothing", (req, res) => {
