@@ -16,10 +16,13 @@
   </div>
 </nav>
 
-<!-- #apicart-cart-dropdown will be replaced by dropdown --->
-<div id="apicart-cart-dropdown"></div>
-<!-- #apicart will be replaced by components according to configuration --->
-<div id="apicart"></div>
+<div style="max-width: 1902px; margin: 0 auto; padding: 0 20px;">
+  <div style="margin: 5px 0; display: flex; justify-content: center;">
+    <!-- #apicart-cart-dropdown is the target element for the Cart dropdown component. You can move it wherever you want -->
+    <div id="apicart-cart-dropdown"></div>
+  </div>
+</div>
+{{!-- Welcome message --}}
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -28,56 +31,43 @@
   </div>
 </div>
 
+<!-- #apicart is the target for the application -->
+<div id="apicart"></div>
+
 <!-- Populate some items within this container -->
 <div class="container mt-3 p-2">
   <div class="row">
     <div class="col">
-      <h2>€25</h2>
-      <img src="/assets/images/clshirt1613.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-        to Cart</button>
+      <img src="/assets/images/clshirt1613.jpg" alt="a grey t-shirt with black text" height="200px" width="200px">
+      <h3>€29.99</h3>
+      <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
     </div>
-
     <div class="col">
-      <h3>€20</h3>
       <img src="/assets/images/HanHent Funny Programming T Shirt Male Cotton.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirthan15.json">Add
-        to Cart</button>
+      <h3>€20</h3>
+      <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirthan15.json">Add to Cart</button>
     </div>
-
     <div class="col">
-      <h4>€200</h4>
       <img src="/assets/images/yeezy.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-        to Cart</button>
+      <h3>€200</h3>
+      <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/ye/yeezy01.json">Add to Cart</button>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h2>€28</h2>
       <img src="/assets/images/Why You Delete Cookies.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-        to Cart</button>
+      <h3>€29.99</h3>
+      <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirtwhydelcookies.json">Add to Cart</button>
     </div>
-
     <div class="col">
-      <h2>€100</h2>
-      <img src="/assets/images/offwhitebelt.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-        to Cart</button>
+      <img src="/assets/images/Only-5-Decades-Old-Printed-Customized-Tshirt-50th-Birthday.jpg" alt="" height="200px" width="200px">
+      <h3>€50</h3>
+      <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt50bday.json">Add to Cart</button>
     </div>
-
     <div class="col">
-      <h2>€30</h2>
-      <img src="/assets/images/airfryer.jpg" alt="" height="200px" width="200px">
-      <button
-        data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-        to Cart</button>
+      <img src="/assets/images/Read This Out Loud!.jpg" alt="" height="200px" width="200px">
+      <h3>€80</h3>
+      <button data-apicart-add-item="	https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirtreadthisoutloud.json">Add to Cart</button>
     </div>
   </div>
 </div>
@@ -89,7 +79,7 @@
     .setDevEnv() // Switch to dev environment
     .configure({
       store: new Apicart.Store({
-        token: "zxbRBAYpNBgJp7CPJMi4VsWjF7eSVoFxqjr4gKb7ZyfQ69ucUH5yswP0Whz5LHFl"
+        token: "{{ APICart }}"
       })
     })
     .initVueBundle();

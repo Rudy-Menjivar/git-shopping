@@ -3,6 +3,7 @@ const express = require("express");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
