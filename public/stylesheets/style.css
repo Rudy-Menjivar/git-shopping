@@ -57,6 +57,7 @@ body {
 
 .row {
   color: black;
+  margin: 35px;
 }
 
 a {
@@ -88,4 +89,13 @@ a:hover:after {
 
 .apicart-cart-dropdown {
   float: right;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
 }
