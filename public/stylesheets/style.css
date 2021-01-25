@@ -20,7 +20,7 @@ body {
 }
 
 .col-sm {
-  color: red;
+  color: black;
   column-gap: 50px;
   row-gap: 30px;
   grid-template-rows: center;
@@ -56,7 +56,7 @@ body {
 }
 
 .row {
-  color: red;
+  color: black;
 }
 
 a {
