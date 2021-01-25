@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand ml-auto" href="/">Git Shopping</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -25,37 +26,65 @@
   <div class="row">
     <div class="col">
       <h2>Most popular</h2>
-      <img src="/assets/images/clshirt1613.jpg" alt="" width="200px">
-      <h1>Your cost $6.99</h1>
-      <p>comes in colors black and grey</p>
+      <img src="/assets/images/clshirt1613.jpg" alt="" height="200px" width="200px">
+      <div class="description">
+        <p>Grey Text T-Shirt</p>
+      </div>
+      <div class="price">
+        <p>$25.00</p>
+
+      </div>
+
       <br>
-      <button data-apicart-add-item="/login">Add to cart</button>
+      <div class="button">
+        <button
+          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
+          to Cart</button>
+      </div>
     </div>
-     <div class="col">
-      <img src="/assets/images/yeezy.jpg" alt="" width="200px">
-      <h1>Your price $180</h1>
-      <p>Original price $220</p>
+    <div class="col">
+      <img src="/assets/images/yeezy.jpg" alt="" height="200px" width="200px">
+      <div class="description">
+        <p>Yeezy 350 Boost V2</p>
+      </div>
+      <div class="price">
+        <p>$275.00</p>
+      </div>
       <br>
-      <button data-apicart-add-item="/login">Add to cart</button>
+      <div class="button">
+        <button
+          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
+          to Cart</button>
+      </div>
     </div>
-     <div class="col">
-      <img src="/assets/images/Why You Delete Cookies.jpg" alt="" width="200px">
-      <h1>Your price $8.97</h1>
+    <div class="col">
+      <img src="/assets/images/Why You Delete Cookies.jpg" alt="" height="200px" width="200px">
+      <div class="description">
+        <p>Light Blue Text T-Shirt</p>
+      </div>
+      <div class="price">
+        <p>$28.00</p>
+      </div>
       <br>
-      <button data-apicart-add-item="/login">Add to cart</button>
+      <div class="button">
+        <button
+          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
+          to Cart</button>
+      </div>
     </div>
 
-    
+
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
 <script>
   Apicart
-  .setDevEnv() // Switch to dev environment
-  .configure({
-    store: new Apicart.Store({
-      token: "zxbRBAYpNBgJp7CPJMi4VsWjF7eSVoFxqjr4gKb7ZyfQ69ucUH5yswP0Whz5LHFl"
+    .setDevEnv() // Switch to dev environment
+    .configure({
+      store: new Apicart.Store({
+        token: "zxbRBAYpNBgJp7CPJMi4VsWjF7eSVoFxqjr4gKb7ZyfQ69ucUH5yswP0Whz5LHFl"
+      })
     })
-  })
-  .initVueBundle();
+    .initVueBundle();
 </script>
