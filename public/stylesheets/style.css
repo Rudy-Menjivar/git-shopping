@@ -61,11 +61,10 @@ body {
 }
 
 a {
-  color: #fff;
+  color:white;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   padding: 15px 20px;
   position: relative;
@@ -78,7 +77,7 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(20, 20, 20);
+  background: black;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -95,7 +94,14 @@ a:hover:after {
   font-weight: bold;
   font-size: 30px;
 }
+ 
+button{
+  background-color:grey;
+  color:white;
+  border: none;
+}
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: black;
+  
 }
