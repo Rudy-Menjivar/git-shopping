@@ -127,16 +127,3 @@
     </div>
   </div>
 </div>
-{{!-- apicart script --}}
-<script
-  src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
-<script>
-  Apicart
-    .setDevEnv() // Switch to dev environment
-    .configure({
-      store: new Apicart.Store({
-        token: "{{ APICart }}"
-      })
-    })
-    .initVueBundle();
-</script>
