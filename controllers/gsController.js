@@ -37,12 +37,12 @@ router.use(passport.initialize());
 router.use(passport.session());
 // const passportConfig = { failureRedirect: "/login" };
 
-const authRequired = (req, res, next) => {
-  if (req.user) {
-    return next();
-  }
-  res.redirect("/login?required=1");
-};
+// const authRequired = (req, res, next) => {
+//   if (req.user) {
+//     return next();
+//   }
+//   res.redirect("/login?required=1");
+// };
 
 router.use((req, res, next) => {
   res.locals.user = req.user;
