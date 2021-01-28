@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8080;
 
 // Import routes and give the server access to them
 const routes = require("./controllers/gsController.js");
-
+const routes2 = require("./controllers/gsController2.js"); // New Controller Route ***********
 // Set Handlebars and create express app
 const exphbs = require("express-handlebars");
 const app = express();
@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Get routes from gsController
 app.use(routes);
-
+app.use(routes2); // New Controller Route********
 // App start
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 
