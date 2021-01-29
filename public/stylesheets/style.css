@@ -58,10 +58,11 @@ body {
 .row {
   color: black;
   margin: 35px;
+  font-family: "Teko", sans-serif;
 }
 
 a {
-  color:black;
+  color: black;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -94,14 +95,19 @@ a:hover:after {
   font-weight: bold;
   font-size: 30px;
 }
- 
-button{
-  background-color:grey;
-  color:white;
+
+button {
+  background-color: grey;
+  color: white;
   border: none;
 }
 
 button:hover {
   background-color: black;
-  
+}
+
+.slogan {
+  text-align: center;
+  font-size: 27px;
+  font-family: "Carter One", cursive;
 }
