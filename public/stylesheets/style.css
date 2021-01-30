@@ -112,3 +112,10 @@ button:hover {
   font-family: "Carter One", cursive;
   margin-top: 20px;
 }
+
+.success {
+  text-align: center;
+  font-size: 27px;
+  font-family: "Teko", sans-serif;
+  margin-top: 20px;
+}
