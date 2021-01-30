@@ -91,9 +91,9 @@ a:hover:after {
   float: right;
 }
 
-.price {
+.description {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 button {
@@ -110,4 +110,5 @@ button:hover {
   text-align: center;
   font-size: 27px;
   font-family: "Carter One", cursive;
+  margin-top: 20px;
 }
