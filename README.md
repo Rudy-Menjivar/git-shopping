@@ -4,31 +4,8 @@
 
 ## Description
     
-Setting up an E-commerce site to buy anything from clothing, household items, electronics and gifts.
+Git-Shopping is a team project to setup an E-commerce site. The site features apparel and shoes.
 
-Clothing
-- Hats
-- Shirts
-- Pants
-- Shoes
-- Socks
-
-Household items
-- Tables
-- Chairs
-- Couches
-
-Electronics
-- Microwave
-- Oven
-- TVs
-- Speakers
-- Connected Devices
-
-Gifts:
-- White elephant gifts
-- Holiday gifts
-- Gag gifs
 
 ## Content
 
@@ -49,21 +26,33 @@ Gifts:
 * [Team Members](#team-members)
 
 
-## Team Assignments
+## Team Contributions
 
-Git Management & misc
-- Rudy Menjivar
+Rudy Menjivar
+- Git Management
+- API & HTML Routes
+- Implemented login and authentication
+- Apply MVC structure
+- Protect API keys from public use
+- Finalize README
+- Design & styling
+- Code cleanup
 
-API - Time Stamp API or server side API
-- Robert Koepp
+Robert Koepp
+- Researched APIs for deployment
+- Moved passport code to a separate file
+- Setup content for several handlebars pages
+- Applied layout design, styling & additional fonts
+- Code cleanup
 
-Logins & passwords
-css
-- Emilio Luna
+Devon Leardini
+- Applied hover effect on buttons
+- Aligned NavBar to the right
+- Design & styling
+- Code cleanup
 
-Design & misc
-- Devon Leardini
-
+Emilio Luna
+- Researched login and authentication
 
 ## Technologies Used
 
@@ -134,8 +123,6 @@ Licensed under the [MIT](./LICENSE.txt) license.
 The contributors of git-shopping are:
 
 * <a href="https://github.com/Rudy-Menjivar" target="_blank">Rudy Menjivar</a>
-* <a href="https://github.com/eluna1997" target="_blank">Emilio Luna</a>
 * <a href="https://github.com/Krazydev12" target="_blank">Devon Leardini</a>
 * <a href="https://github.com/RobertKoepp" target="_blank">Robert Koepp</a>
-
-TEST 
+* <a href="https://github.com/eluna1997" target="_blank">Emilio Luna</a>
