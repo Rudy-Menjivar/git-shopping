@@ -17,10 +17,11 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 mt-4">
+    <div class="col-md-4"></div>
+    <div class="col-md-8">
         <form method="post" class="login">
           <h2>Login</h2>
-	      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+	        <input type="hidden" name="_csrf" value="{{csrfToken}}">
           {{#if hasError}}
             <div class="error">{{ error }}</div>
           {{/if}}
@@ -35,10 +36,9 @@
             <div class="form-row">
               <input id="password" type="password" name="password">
             </div>
-            <br>
-            <button type="submit">Login</button>
+            <button id="login" type="submit">Login</button>
           </div>
-          <p>Or sign up <a href="register">here</a></p>
+          <p>Or sign up <a href="register" id="topless">here</a></p>
         </form>       
     </div>
   </div>

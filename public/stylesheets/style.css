@@ -3,6 +3,14 @@ form.login {
   margin-top: 50px;
 }
 
+#login {
+  margin-top: 10px;
+}
+
+#topless {
+  padding-top: 0px;
+}
+
 .center {
   letter-spacing: 2px;
   font-family: "Bangers", cursive;
