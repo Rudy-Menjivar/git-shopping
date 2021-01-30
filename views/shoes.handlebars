@@ -10,20 +10,26 @@
         <a class="nav-link" href="clothing">Clothing</a>
         <a class="nav-link active" href="shoes">Shoes</a>
         <a class="nav-link" href="members">Members</a>
-        <a class="nav-link" href="login">Log Out</a>
+        <a class="nav-link" href="logout">Log Out</a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- #apicart-cart-dropdown will be replaced by dropdown --->
-<div id="apicart-cart-dropdown"></div>
+<div style="max-width: 1902px; margin: 0 auto; padding: 0 20px;">
+  <div style="margin: 5px 0; display: flex; justify-content: center;">
+    <!-- #apicart-cart-dropdown is the target element for the Cart dropdown component. You can move it wherever you want -->
+    <div id="apicart-cart-dropdown"></div>
+  </div>
+</div>
+
 <!-- #apicart will be replaced by components according to configuration --->
 <div id="apicart"></div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <h2>Shoes</h2>
+      <h2 class="text-center">Most Popular Shoes</h2>
     </div>
   </div>
 </div>
@@ -31,109 +37,86 @@
 <!-- Populate some items within this container -->
 <div class="container mt-3 p-2">
   <div class="row">
-    <div class="col">
-
+    <div class="col text-center">
       <img src="/assets/images/Jordan1.jpg" alt="" height="200px" width="200px">
       <div class="description">
         <p>Jordan Retro 1 Mid</p>
       </div>
-      <div class="price">
-        <p>$125.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$125.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
 
-    <div class="col">
+    <div class="col text-center">
       <img src="/assets/images/Jordan13.jpg" alt="" height="200px" width="200px">
       <div class="description">
         <p>Jordan Retro 13</p>
       </div>
-      <div class="price">
-        <p>$225.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$225.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
-
-    <div class="col">
+    <div class="col text-center">
       <img src="/assets/images/yeezy.jpg" alt="" height="200px" width="200px">
       <div class="description">
         <p>Yeezy 350 Boost V2</p>
       </div>
-      <div class="price">
-        <p>$225.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$225.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col text-center">
       <img src="/assets/images/pumaTMC.jpg" alt="" height="200px" width="200px">
       <div class="description">
-        <p>Puma Nipsey Hustle TMC</p>
+        <p>Puma Nipsey Hustle TMC
       </div>
-      <div class="price">
-        <p>$225.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$225.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
-
-    <div class="col">
+    <div class="col text-center">
       <img src="/assets/images/vans.jpg" alt="" height="200px" width="200px">
       <div class="description">
         <p>Supreme Vans</p>
       </div>
-      <div class="price">
-        <p>$150.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$150.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
-
-    <div class="col">
+    <div class="col text-center">
       <img src="/assets/images/bal.jpg" alt="" height="200px" width="200px">
       <div class="description">
         <p>Balenciaga Speed Trainer</p>
       </div>
-      <div class="price">
-        <p>$2,250.00</p>
-      </div>
-      <div class="button">
-        <button
-          data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add
-          to Cart</button>
+      <div>
+        <p>$2,250.00
+          <a style="padding-top: 0px;">
+            <button data-apicart-add-item="https://cdn.apicart.dev/external/yaxkmvtr0zbeni50oewvqqetn5tgz4oi/data/cl/clshirt1613.json">Add to Cart</button>
+          </a>
+        </p>
       </div>
     </div>
   </div>
 </div>
-{{!-- apicart script --}}
-<script
-  src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha7/dist/bundles/default/default.full.min.js"></script>
-<script>
-  Apicart
-    .setDevEnv() // Switch to dev environment
-    .configure({
-      store: new Apicart.Store({
-        token: "zxbRBAYpNBgJp7CPJMi4VsWjF7eSVoFxqjr4gKb7ZyfQ69ucUH5yswP0Whz5LHFl"
-      })
-    })
-    .initVueBundle();
-</script>

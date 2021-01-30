@@ -51,12 +51,16 @@ router.get("/members", authRequired, (req, res) => {
   });
 });
   
-router.get("/clothing", (req, res) => {
-  res.render("clothing");
+router.get("/clothing", authRequired, (req, res) => {
+  res.render("clothing", {
+    APICart: APIKey,
+  });
 });
   
-router.get("/shoes", (req, res) => {
-  res.render("shoes");
+router.get("/shoes", authRequired, (req, res) => {
+  res.render("shoes", {
+    APICart: APIKey,
+  });
 });
   
 router.all("/login", (req, res, next) => {
