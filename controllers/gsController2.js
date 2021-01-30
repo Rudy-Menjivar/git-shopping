@@ -19,6 +19,18 @@ const authRequired = (req, res, next) => {
   res.redirect("/login?required=1");
 };
 
+router.get("/api/user_data", (req, res) => {
+  if (!req.user) {
+    // send an empty object when the user is not logged in
+    res.json({});
+  } else {
+    // send back the user's username
+    res.json({
+      username: req.user.username
+    });
+  }
+});
+
 router.use(
   session({
     secret: "awesome auth",
