@@ -35,14 +35,3 @@ app.use(routes);
 app.use(routes2); // New Controller Route********
 // App start
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-
-// Syncing our database and logging a message to the user upon success
-// db.sequelize.sync().then(() => {
-//   app.listen(PORT, () => {
-//     console.log(
-//       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-//       PORT,
-//       PORT
-//     );
-//   });
-// });
