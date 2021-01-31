@@ -15,45 +15,60 @@
   </div>
 </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 mt-4">
-      <h2>Register</h2>
-      <form method="post">
-	    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+<form method="post" class="container mt-4">
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="form-group col-md-6">
+    <h2 class="mb-4 text-center">Registration</h2>
+    	<input type="hidden" name="_csrf" value="{{csrfToken}}">
 	    {{#if hasError}}
 		  <div class="error">{{error}}</div>
 	    {{/if}}
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <div class="form-row">
-            <input id="email" type="text" name="email" value="{{form.email}}">
-          </div>	      
-        </div>
-        <div class="form-group">
-          <label for="username">Username</label>
-          <div class="form-row">
-            <input id="username" type="text" name="username" value="{{form.username}}">
-          </div> 
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <div class="form-row">
-            <input id="password" type="password" name="password">
-          </div>	      
-        </div>
-        <div class="form-group">
-          <label for="password2">Re-type Password</label>
-          <div class="form-row">
-            <input id="password2" type="password" name="password2">
-          </div>
-        </div>
-        <div class="form-row">
-          <button type="submit">Register</button>
-        </div>
-        <br>
-        <p>Or log in <a href="login">here</a></p>
-      </form>
     </div>
+    <div class="col-md-3"></div>
   </div>
-</div>
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="form-group col-md-6">
+      <label for="username">Username</label>
+      <input class="form-control" id="username" type="text" name="username" value="{{form.username}}">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="form-group col-md-6">
+      <label for="email">E-mail</label>
+      <input class="form-control" id="email" type="text" name="email" value="{{form.email}}">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="form-group col-md-6">
+      <label for="password">Password</label>
+      <input class="form-control" id="password" type="password" name="password">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="form-group col-md-6">
+      <label for="password2">Re-type Password</label>
+      <input class="form-control" id="password2" type="password" name="password2">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <a class="topless">
+        <button type="submit">Register</button>
+      </a>
+    </div>
+    <div class="col-md-3 topless">
+      <span>Or log in</span><a href="login">here</a>
+    </div>
+      <div class="col-md-3"></div>
+  </div>
+</form>
