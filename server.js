@@ -7,7 +7,6 @@ require("dotenv").config();
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
-// const db = require("./models");   // temporarily disabled
 
 // Import routes and give the server access to them
 const routes = require("./controllers/gsController.js");
