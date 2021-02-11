@@ -11,9 +11,11 @@ const PORT = process.env.PORT || 8080;
 // Import routes and give the server access to them
 const routes = require("./controllers/gsController.js");
 const routes2 = require("./controllers/gsController2.js"); // New Controller Route ***********
-// Set Handlebars and create express app
+// Compress all responses, set Handlebars and create express app
+const compression = require('compression')
 const exphbs = require("express-handlebars");
 const app = express();
+app.use(compression())
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
